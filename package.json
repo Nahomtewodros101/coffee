@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Full stack Mern coffee house locator ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "start": " node client/dev",
+    "dev": "concurrently \"npm run start --prefix backend --name backend\" \"npm run start --prefix frontend --name frontend\""
+  },
+  "keywords": [
+    "chefche"
+  ],
+  "author": "Nahom Tewodros",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1",
+    "nodemon": "^3.1.7"
+  }
+}
